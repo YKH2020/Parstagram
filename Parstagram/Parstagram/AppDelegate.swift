@@ -2,8 +2,7 @@
 //  AppDelegate.swift
 //  Parstagram
 //
-//  Created by Yash Hegde on 10/7/21.
-//
+//  Created by Yash Hegde on 10/17/21.
 
 import UIKit
 import Parse
@@ -12,23 +11,17 @@ import Parse
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
 
-            // --- Copy this only
-            
-            let parseConfig = ParseClientConfiguration {
-                    $0.applicationId = "R4iQIBUNigvMZiQtmNAAxDYDTP6m4lwglxtnqxxt" // <- UPDATE
-                    $0.clientKey = "jJIJXl6Wsw5iq5ddUF5GIAUdZMvsvOj9EpU1JPe3" // <- UPDATE
-                    $0.server = "https://parseapi.back4app.com"
-            }
-            Parse.initialize(with: parseConfig)
-            
-            // --- end copy
+        let parseConfig = ParseClientConfiguration {
+                $0.applicationId = "i6dsp6SIm4k9zN4VWWcCA68qvCmYBZdiVvyU6L3v"
+                $0.clientKey = "hq7DrEeAZjGHsMK6k1YITXAa3IUiBM1rJ3WDcOka"
+                $0.server = "https://parseapi.back4app.com"
+        }
+        Parse.initialize(with: parseConfig)
 
-
-            return true
+        return true
     }
 
     // MARK: UISceneSession Lifecycle

@@ -2,7 +2,7 @@
 //  PostCell.swift
 //  Parstagram
 //
-//  Created by Yash Hegde on 10/7/21.
+//  Created by Yash Hegde on 10/17/21.
 //
 
 import UIKit
@@ -10,7 +10,6 @@ import UIKit
 class PostCell: UITableViewCell {
 
     @IBOutlet weak var photoView: UIImageView!
-    
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var captionLabel: UILabel!
     
